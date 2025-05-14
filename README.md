@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-orange)](LICENSE)
 
 ## Project Overview
-**Multi-Camera Multi-Object Tracking** is a comprehensive framework that extends single-camera tracking to a multi-camera setup. It leverages [ByteTrack](https://github.com/ifzhang/ByteTrack) for high-performance single-camera multi-object tracking, enhanced by our **Conflict-aware Cosine Tracking (CC)** algorithm. Once per-camera tracks are generated, the **Human Matching (HM) Algorithm** assigns global IDs by fusing 3D ground coordinates and appearance features across all views.
+Our **Multi-Camera Multi-Object Tracking** is a comprehensive framework that extends single-camera tracking to a multi-camera setup. It leverages [ByteTrack](https://github.com/ifzhang/ByteTrack) for high-performance single-camera multi-object tracking, enhanced by our **Conflict-aware Cosine Tracking (CC)** algorithm. Once per-camera tracks are generated, the **Human Matching (HM) Algorithm** assigns global IDs by fusing 3D ground coordinates and appearance features across all views.
 
 Key steps:
 1. **Single-Camera Tracking:** ByteTrack + CC algorithm for robust ID assignment.
