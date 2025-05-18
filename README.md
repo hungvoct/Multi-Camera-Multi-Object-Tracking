@@ -27,6 +27,11 @@ Key steps:
 
 ---
 
+## Video demo
+Watch my video demo here: https://www.youtube.com/watch?v=Uq-M_70Ip8Y
+
+---
+
 ## Prerequisites
 - **Python:** >= 3.8  
 - **OpenCV:** 4.x  
