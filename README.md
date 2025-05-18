@@ -5,40 +5,49 @@
 [![License](https://img.shields.io/badge/license-MIT-orange)](LICENSE)
 
 ## Project Overview
-Our **Multi-Camera Multi-Object Tracking** is a comprehensive framework that extends single-camera tracking to a multi-camera setup. It leverages [ByteTrack](https://github.com/ifzhang/ByteTrack) for high-performance single-camera multi-object tracking, enhanced by our **Conflict-aware Cosine Tracking (CC)** algorithm. Once per-camera tracks are generated, the **Human Matching (HM) Algorithm** assigns global IDs by fusing 3D ground coordinates and appearance features across all views.
 
-Key steps:
-1. **Single-Camera Tracking:** ByteTrack + CC algorithm for robust ID assignment.
-2. **3D Localization:** Compute ground-plane coordinates using intrinsic & extrinsic parameters.
-3. **Global ID Association:** Fuse spatial and appearance cues with our HM Algorithm.
+**Multi-Camera Multi-Object Tracking** is a robust framework that extends object tracking from a single camera to a multi-camera environment. It builds upon [ByteTrack](https://github.com/ifzhang/ByteTrack) for high-performance tracking and incorporates two key enhancements:
+- **Conflict-aware Cosine Tracking (CC)** for reducing ID switches within a single view.
+- **Human Matching (HM) Algorithm** for assigning consistent global IDs across multiple views using spatial and appearance cues.
 
----
+### Pipeline Overview
+
+1. **Single-Camera Tracking**  
+   - Uses ByteTrack + CC algorithm for robust per-camera ID assignment.
+2. **3D Localization**  
+   - Projects 2D detections to ground-plane coordinates using camera intrinsics and extrinsics.
+3. **Global ID Association**  
+   - Applies the HM Algorithm to fuse appearance and spatial features for cross-view matching.
 
 ## Features
-- **Enhanced Single-Camera Tracking**  
-  - Integrates torchreid for appearance feature extraction.  
-  - Implements CC algorithm to reduce ID switches.
+
+- **Improved Single-Camera Tracking**  
+  - Integrated with `torchreid` for high-quality appearance embeddings.  
+  - CC algorithm mitigates frequent ID switches.
+
 - **3D Ground-Plane Estimation**  
-  - Converts 2D detections to real-world coordinates.  
-  - Supports arbitrary camera configurations (intrinsics + extrinsics).
-- **Global Identity Management**  
-  - HM Algorithm for consistent cross-view ID assignment.  
-  - Balances spatial proximity and appearance similarity.
+  - Transforms bounding boxes to real-world coordinates.  
+  - Works with arbitrary camera setups.
 
----
-
-## Video demo
-Watch my video demo here: https://www.youtube.com/watch?v=Uq-M_70Ip8Y
-
----
+- **Multi-Camera Identity Association**  
+  - HM Algorithm effectively assigns consistent global identities.  
+  - Balances appearance similarity with spatial proximity.
 
 ## Prerequisites
+
 - **Python:** >= 3.8  
 - **OpenCV:** 4.x  
 - **NumPy**  
-- **TensorRT** (optional, for accelerated inference)  
-- **torchreid** (for feature embedding)
+- **TensorRT** (optional, for faster inference)  
+- **torchreid** (for feature extraction)
 
-Install with pip:
+### Installation
+Install required packages via `pip`:
 ```bash
 pip install opencv-python numpy tensorRT torchreid
+```
+
+## Video Demo
+
+Check out the demo video showcasing the system in action:  
+➡️ [https://www.youtube.com/watch?v=Uq-M_70Ip8Y](https://www.youtube.com/watch?v=Uq-M_70Ip8Y)
