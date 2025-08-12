@@ -46,6 +46,13 @@ Install required packages via `pip`:
 ```bash
 pip install opencv-python numpy tensorRT torchreid
 ```
+## Dataset
+This project is tested and evaluated on **ICGLab6** dataset, from Institute of Computer Graphics and Vision, Graz University of Technology, Austria. If you use this data, please cite this [paper](https://openaccess.thecvf.com/content_cvpr_2013/papers/Possegger_Robust_Real-Time_Tracking_2013_CVPR_paper.pdf).
+
+## Implement
+```bash
+python tools/run_multicam_tracking.py
+```
 
 ## Video Demo
 
