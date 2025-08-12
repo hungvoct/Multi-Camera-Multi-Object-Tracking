@@ -9,6 +9,7 @@
 **Multi-Camera Multi-Object Tracking** is a robust framework that extends object tracking from a single camera to a multi-camera environment. It builds upon [ByteTrack](https://github.com/ifzhang/ByteTrack) for high-performance tracking and incorporates two key enhancements:
 - **Conflict-aware Cosine Tracking (CC)** for reducing ID switches within a single view.
 - **Human Matching (HM) Algorithm** for assigning consistent global IDs across multiple views using spatial and appearance cues.
+![Result](tracking_multi.png)
 
 ### Pipeline Overview
 
