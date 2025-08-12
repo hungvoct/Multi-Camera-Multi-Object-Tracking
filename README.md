@@ -19,6 +19,7 @@
    - Projects 2D detections to ground-plane coordinates using camera intrinsics and extrinsics.
 3. **Global ID Association**  
    - Applies the HM Algorithm to fuse appearance and spatial features for cross-view matching.
+![Pipeline](full_pipeline.jpg)
 
 ## Features
 
