@@ -11,7 +11,7 @@
 - **Human Matching (HM) Algorithm** for assigning consistent global IDs across multiple views using spatial and appearance cues.
 ![Result](tracking_multi.png)
 
-### Pipeline Overview
+## Pipeline Overview
 
 1. **Single-Camera Tracking**  
    - Uses ByteTrack + CC algorithm for robust per-camera ID assignment.
