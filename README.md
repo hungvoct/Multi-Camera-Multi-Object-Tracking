@@ -9,7 +9,15 @@
 **Multi-Camera Multi-Object Tracking** is a robust framework that extends object tracking from a single camera to a multi-camera environment. It builds upon [ByteTrack](https://github.com/ifzhang/ByteTrack) for high-performance tracking and incorporates two key enhancements:
 - **Conflict-aware Cosine Tracking (CC)** for reducing ID switches within a single view.
 - **Human Matching (HM) Algorithm** for assigning consistent global IDs across multiple views using spatial and appearance cues.
+
 ![Result](tracking_multi.png)
+
+## Paper
+If you'd like to read the full paper describing this work, click the link below:
+
+➡️ [Our paper (IEEE Xplore)](https://ieeexplore.ieee.org/document/11133773)
+
+> **Note:** Please use the IEEE Xplore page for the canonical citation. If you want, I can also add a BibTeX entry (pulled from IEEE Xplore) into this README.
 
 ## Pipeline Overview
 
@@ -19,6 +27,7 @@
    - Projects 2D detections to ground-plane coordinates using camera intrinsics and extrinsics.
 3. **Global ID Association**  
    - Applies the HM Algorithm to fuse appearance and spatial features for cross-view matching.
+
 ![Pipeline](full_pipeline.jpg)
 
 ## Features
@@ -48,6 +57,7 @@ Install required packages via `pip`:
 ```bash
 pip install opencv-python numpy tensorRT torchreid
 ```
+
 ## Dataset
 This project is tested and evaluated on **ICGLab6** dataset, from Institute of Computer Graphics and Vision, Graz University of Technology, Austria. If you use this data, please cite this [paper](https://openaccess.thecvf.com/content_cvpr_2013/papers/Possegger_Robust_Real-Time_Tracking_2013_CVPR_paper.pdf).
 
