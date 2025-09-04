@@ -17,8 +17,6 @@ If you'd like to read the full paper describing this work, click the link below:
 
 ➡️ [Our paper (IEEE Xplore)](https://ieeexplore.ieee.org/document/11133773)
 
-> **Note:** Please use the IEEE Xplore page for the canonical citation. If you want, I can also add a BibTeX entry (pulled from IEEE Xplore) into this README.
-
 ## Pipeline Overview
 
 1. **Single-Camera Tracking**  
