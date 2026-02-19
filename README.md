@@ -6,8 +6,8 @@
 
 ## Project Overview
 
-This repository represent the proposed method to solve the Multi-camera Multi-Object Tracking problem. Our method including two modules:
-- **Conflict-aware Cosine Tracking (CC)** combined to [ByteTrack](https://github.com/ifzhang/ByteTrack) for reducing ID switches within a single view.
+This repository presents the proposed method for solving the Multi-Camera Multi-Object Tracking problem. Our method includes two modules:
+- **Conflict-aware Cosine Tracking (CC)**, combined with ByteTrack, to reduce ID switches within a single view.
 - **Human Matching (HM) Algorithm** for assigning consistent global IDs across multiple views using spatial and appearance cues.
 
 ![Result](tracking_multi.png)
